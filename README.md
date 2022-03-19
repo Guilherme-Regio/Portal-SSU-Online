@@ -1,2 +1,2 @@
 # Portal SSU Online
- Portal e Gerenciamento de Ativos
+ Portal e Gerenciamento de Ativos.
