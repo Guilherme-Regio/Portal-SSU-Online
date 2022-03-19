@@ -1,0 +1,189 @@
+@font-face {
+    font-family: vag-rounded-bold;
+    src: url(/configuracoes/fonts/vag-rounded-bold.ttf)
+}
+
+body {
+    margin: 0;
+    padding-top: 50px;
+    font-family: "Roboto", Arial, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: vag-rounded-bold;
+    color: #3a3f48;
+    font-size: 4.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #3a3f48;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+    color: #353353;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mt-5.mb-3.text-muted.text-center {
+    padding: 15px;
+}
+
+.scroll {
+    scroll-behavior: auto;
+}
+
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+
+.btn {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.btn--green {
+    background: #24784c;
+}
+
+.btn--green:hover {
+    background: #24784c;
+}
+
+.botao {
+    margin-left: 86.667%;
+}
+
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+    .form-label-group>label {
+        display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .form-label-group>label {
+        display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.navbar-brand {
+    max-width: 150px;
+    background: #007f56;
+    display: inline-table;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+
+/* Menu Mobile
+-------------------------------------------------- */
+
+@media screen and (max-width: 575px) {
+    body {
+        padding: 0;
+    }
+    .menu-mobile {
+        display: block;
+        background: #007f56;
+        position: absolute;
+        width: 70px;
+        left: 0;
+        top: 0;
+    }
+    .navbar .container {
+        display: none;
+        position: absolute;
+    }
+    ul.navbar-nav {
+        position: absolute;
+        z-index: 11;
+        background: white;
+        width: 50%;
+    }
+}

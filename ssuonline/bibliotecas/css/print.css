@@ -1,0 +1,61 @@
+* {
+  background:transparent !important;
+  color:#000 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  -ms-filter:none !important;
+}
+body {
+  margin:0;
+  padding:0;
+  line-height: 1.4em;
+  padding-top: 50px;
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.0cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {
+  width: 25cm;
+  height: 30.7cm;
+  padding: 2cm;
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 19cm;
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
+.centro_paragrafo{
+  display: flex;
+  justify-content: center; 
+  width: 800px;
+  padding-top: 50px;
+}
+.escrita_esquerda{
+  font-weight: 400; 
+  padding-left: 30px;
+}
+@media print {
+  footer {page-break-after: always;
+    margin: 50;
+  }
+}
+    
