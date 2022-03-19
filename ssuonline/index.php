@@ -70,8 +70,6 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="ok" value="Logar">Entrar</button>
                     <p class="mt-5 mb-3 text-muted text-center">&copy; 2022</p>
                 </form>
-
-                <?php echo isset($erro) ? $erro : '';  ?>
             </div>
         </div>
     </body>
