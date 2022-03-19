@@ -4,7 +4,7 @@ ini_set('default_charset', 'UTF-8');
 <?php
 function verificaAcessoScripts()
 {
-    if ($_SESSION['nick'] === 'GFOliveira') { ?>
+    if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
         <li>
             <a href="#">
                 <i class="fa fa-bookmark"></i>
@@ -12,7 +12,7 @@ function verificaAcessoScripts()
             </a>
         </li>
     <?php
-    } elseif (in_array("CN=GRP_ASSET,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("Suporte Cds - CN=Suporte CDs,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=Lideranças Service Desk N2,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=AD,OU=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li>
             <a href="#">
                 <i class="fa fa-bookmark"></i>
@@ -24,7 +24,7 @@ function verificaAcessoScripts()
 }
 function verificaAcessoImagens()
 {
-    if ($_SESSION['nick'] === 'GFOliveira') { ?>
+    if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-download"></i>
@@ -45,7 +45,7 @@ function verificaAcessoImagens()
             </div>
         </li>
     <?php
-    } elseif (in_array("CN=GRP_ASSET,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-download"></i>
@@ -66,7 +66,7 @@ function verificaAcessoImagens()
             </div>
         </li>
     <?php
-    } elseif (in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-download"></i>
@@ -82,7 +82,7 @@ function verificaAcessoImagens()
             </div>
         </li>
     <?php
-    } elseif (in_array("Suporte Cds - CN=Suporte CDs,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=AD,OU=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-download"></i>
@@ -97,7 +97,7 @@ function verificaAcessoImagens()
             </div>
         </li>
     <?php
-    } elseif (in_array("CN=Lideranças Service Desk N2,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-download"></i>
@@ -117,7 +117,7 @@ function verificaAcessoImagens()
 function verificaAcessoEstoque()
 {
 
-    if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'LAMalaquias') { ?>
+    if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-archive"></i>
@@ -139,7 +139,7 @@ function verificaAcessoEstoque()
 };
 function verificaAcessoRat()
 {
-    if ($_SESSION['nick'] === 'GFOliveira') { ?>
+    if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-laptop"></i>
@@ -160,7 +160,7 @@ function verificaAcessoRat()
             </div>
         </li>
     <?php
-    } elseif (in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-laptop"></i>
@@ -183,7 +183,7 @@ function verificaAcessoRat()
 function verificaAcessoAdmissao()
 {
 
-    if (in_array("CN=GRP_RECRUTAMENTO_SELECAO,OU=_Grupos,OU=_Matriz,OU=Rh,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    if (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-users"></i>
@@ -198,7 +198,7 @@ function verificaAcessoAdmissao()
             </div>
         </li>
     <?php
-    } elseif ($_SESSION['nick'] === 'GFOliveira') { ?>
+    } elseif ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-users"></i>
@@ -219,7 +219,7 @@ function verificaAcessoAdmissao()
             </div>
         </li>
     <?php
-    } elseif (in_array("CN=AdmissaoTI,OU=GruposdeEmail,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="sidebar-dropdown">
             <a href="#">
                 <i class="fa fa-users"></i>
@@ -242,7 +242,7 @@ function verificaAcessoAdmissao()
 function verificaAcessoAdm()
 {
 
-    if (in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+    if (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
         <li class="dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <strong><?php echo $_SESSION['user']; ?></strong>

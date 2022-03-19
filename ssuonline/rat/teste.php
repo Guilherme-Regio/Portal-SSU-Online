@@ -33,7 +33,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'TESTE TESTANDO';
-    $mail->Body    = '<a href="https://ssuonline.rd.com.br/rat/testando.php?id=2" style="background: green">Teste</a>';
+    $mail->Body    = '<a href="https://ssuonline/rat/testando.php?id=2" style="background: green">Teste</a>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

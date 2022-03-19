@@ -1,7 +1,7 @@
 <?php
 function editImagem()
 {
-    if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'croliveira'){
+    if ($_SESSION['nick'] === 'Usuario_ADM_AD' or $_SESSION['nick'] === 'Sub_Usuario_ADM_AD'){
     header("Content-type: text/html; charset=utf-8", true);
     setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
     <?php
@@ -75,7 +75,7 @@ function editImagem()
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content">
                     <div class="sidebar-brand">
-                        <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                        <a href="https://ssuonline/home.php">SSU Online</a>
                         <div id="close-sidebar">
                             <i class="fas fa-times"></i>
                         </div>
@@ -266,7 +266,7 @@ function addimagem()
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content">
                     <div class="sidebar-brand">
-                        <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                        <a href="https://ssuonline/home.php">SSU Online</a>
                         <div id="close-sidebar">
                             <i class="fas fa-times"></i>
                         </div>
@@ -383,7 +383,7 @@ function addimagem()
                 }
                 function imagemloja()
                 {
-                    if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'croliveira') { ?>
+                    if ($_SESSION['nick'] === 'Usuario_ADM_AD' or $_SESSION['nick'] === 'Sub_Usuario_ADM_AD') { ?>
                         <div class="card">
                             <div class="card-header text-muted" style="background: #818896">
                                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#staticBackdrop" data-tt="tooltip" data-placement="bottom" title="Upload de Imagem" style="background: #818896; color: #ffffff; border:#818896">
@@ -510,7 +510,7 @@ function addimagem()
                                 }
                             </style>
                         <?php
-                    } elseif (in_array("CN=GRP_ASSET,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                    } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                             <div class="card text-center">
                                 <div class="card-header text-muted" style="background: #818896">
                                     Imagens
@@ -580,7 +580,7 @@ function addimagem()
                     }
                     function imagemmatriz()
                     {
-                        if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'croliveira') { ?>
+                        if ($_SESSION['nick'] === 'Usuario_ADM_AD' or $_SESSION['nick'] === 'Sub_Usuario_ADM_AD') { ?>
                                 <div class="card">
                                     <div class="card-header text-muted" style="background: #818896">
                                         <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#staticBackdrop" data-tt="tooltip" data-placement="bottom" title="Upload de Imagem" style="background: #818896; color: #ffffff; border:#818896">
@@ -706,7 +706,7 @@ function addimagem()
                                         }
                                     </style>
                                 <?php
-                            } elseif (in_array("CN=GRP_ASSET,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                            } elseif (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                                     <div class="card text-center">
                                         <div class="card-header text-muted" style="background: #818896">
                                         </div>
@@ -774,7 +774,7 @@ function addimagem()
                             }
                             function verificaImagens()
                             {
-                                if (in_array("CN=GRP_ASSET,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=Lideranças Service Desk N2,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_ASSET,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                                if (in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                         <?php
@@ -848,7 +848,7 @@ function addimagem()
                                                 <nav id="sidebar" class="sidebar-wrapper">
                                                     <div class="sidebar-content">
                                                         <div class="sidebar-brand">
-                                                            <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                                                            <a href="https://ssuonline/home.php">SSU Online</a>
                                                             <div id="close-sidebar">
                                                                 <i class="fas fa-times"></i>
                                                             </div>
@@ -966,7 +966,7 @@ function addimagem()
                                             }
                                             function verificaRHadmissao()
                                             {
-                                                if ($_SESSION['nick'] === 'GFOliveira' or in_array("CN=GRP_RECRUTAMENTO_SELECAO,OU=_Grupos,OU=_Matriz,OU=Rh,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=AdmissaoTI,OU=GruposdeEmail,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                                                if ($_SESSION['nick'] === 'Usuario_ADM_AD' or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                         <?php
@@ -1040,7 +1040,7 @@ function addimagem()
                                                                 <nav id="sidebar" class="sidebar-wrapper">
                                                                     <div class="sidebar-content">
                                                                         <div class="sidebar-brand">
-                                                                            <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                                                                            <a href="https://ssuonline/home.php">SSU Online</a>
                                                                             <div id="close-sidebar">
                                                                                 <i class="fas fa-times"></i>
                                                                             </div>
@@ -1160,7 +1160,7 @@ function addimagem()
                                                             };
                                                             function verificaAdmissao()
                                                             {
-                                                                if ($_SESSION['nick'] === 'GFOliveira' or in_array("CN=AdmissaoTI,OU=GruposdeEmail,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_RECRUTAMENTO_SELECAO,OU=_Grupos,OU=_Matriz,OU=Rh,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                                                                if ($_SESSION['nick'] === 'Usuario_ADM_AD' or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                                         <?php
@@ -1234,7 +1234,7 @@ function addimagem()
                                                                                 <nav id="sidebar" class="sidebar-wrapper">
                                                                                     <div class="sidebar-content">
                                                                                         <div class="sidebar-brand">
-                                                                                            <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                                                                                            <a href="https://ssuonline/home.php">SSU Online</a>
                                                                                             <div id="close-sidebar">
                                                                                                 <i class="fas fa-times"></i>
                                                                                             </div>
@@ -1354,7 +1354,7 @@ function addimagem()
                                                                             };
                                                                             function verificaEstoque()
                                                                             {
-                                                                                if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'LAMalaquias') { ?>
+                                                                                if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
                                                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                                                         <?php
@@ -1428,7 +1428,7 @@ function addimagem()
                                                                                                 <nav id="sidebar" class="sidebar-wrapper">
                                                                                                     <div class="sidebar-content">
                                                                                                         <div class="sidebar-brand">
-                                                                                                            <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                                                                                                            <a href="https://ssuonline/home.php">SSU Online</a>
                                                                                                             <div id="close-sidebar">
                                                                                                                 <i class="fas fa-times"></i>
                                                                                                             </div>
@@ -1548,7 +1548,7 @@ function addimagem()
                                                                                             };
                                                                                             function verificaRat()
                                                                                             {
-                                                                                                if (($_SESSION['nick'] === 'GFOliveira') or in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=AdmissaoTI,OU=GruposdeEmail,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                                                                                                if (($_SESSION['nick'] === 'Usuario_ADM_AD') or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                                                                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                                                                         <?php
@@ -1622,7 +1622,7 @@ function addimagem()
                                                                                                                 <nav id="sidebar" class="sidebar-wrapper">
                                                                                                                     <div class="sidebar-content">
                                                                                                                         <div class="sidebar-brand">
-                                                                                                                            <a href="https://ssuonline.rd.com.br/home.php">SSU Online</a>
+                                                                                                                            <a href="https://ssuonline/home.php">SSU Online</a>
                                                                                                                             <div id="close-sidebar">
                                                                                                                                 <i class="fas fa-times"></i>
                                                                                                                             </div>
@@ -1743,7 +1743,7 @@ function addimagem()
                                                                                                             function verificaImp()
                                                                                                             {
 
-                                                                                                                if (($_SESSION['nick'] === 'GFOliveira') or in_array("CN=SSU,OU=SSU_ACESSO,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos']) or in_array("CN=AdmissaoTI,OU=GruposdeEmail,OU=_Grupos,OU=_Matriz,DC=raiadrogasil,DC=com", $_SESSION['grupos'])) { ?>
+                                                                                                                if (($_SESSION['nick'] === 'Usuario_ADM_AD') or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos']) or in_array("CN=GRP_AD=_Grupos,OU=_AD,DC=dominio,DC=com", $_SESSION['grupos'])) { ?>
                                                                                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                                                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                                                                                         <link rel="stylesheet" href="/bibliotecas/bootstrap-4/css/bootstrap.min.css" id="bootstrap-css">
@@ -1758,7 +1758,7 @@ function addimagem()
                                                                                                             };
                                                                                                             function verificaADM()
                                                                                                             {
-                                                                                                                if (($_SESSION['nick'] === 'GFOliveira')) { ?>
+                                                                                                                if (($_SESSION['nick'] === 'Usuario_ADM_AD')) { ?>
                                                                                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                                                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                                                                                         <?php
@@ -1774,7 +1774,7 @@ function addimagem()
                                                                                                             };
                                                                                                             function verificaRatApagar()
                                                                                                             {
-                                                                                                                if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'elrocha' or $_SESSION['nick'] === 'croliveira') { ?>
+                                                                                                                if ($_SESSION['nick'] === 'Usuario_ADM_AD' or $_SESSION['nick'] === 'Sub_Usuario_ADM_AD') { ?>
                                                                                                                         <div class="card">
                                                                                                                             <div class="card-header text-muted" style="background: #818896">
                                                                                                                                 <button id="botao_rat" style="background: #818896; color: #ffffff; border:#818896" disabled> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard2-check" viewBox="0 0 16 16">
@@ -1953,7 +1953,7 @@ function addimagem()
                                                                                                                     };
                                                                                                                     function verificaSoftwareApagar()
                                                                                                                     {
-                                                                                                                        if (($_SESSION['nick'] === 'GFOliveira')) { ?>
+                                                                                                                        if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
                                                                                                                                 <div class="card text-center">
                                                                                                                                     <div class="card-header text-muted" style="background: #818896">
                                                                                                                                         Portal Software
@@ -2194,7 +2194,7 @@ function addimagem()
 
                                                                                                                             function verificarelatorio()
                                                                                                                             {
-                                                                                                                                if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'elrocha' or $_SESSION['nick'] === 'croliveira') { ?>
+                                                                                                                                if ($_SESSION['nick'] === 'Usuario_ADM_AD' or $_SESSION['nick'] === 'Sub_Usuario_ADM_AD') { ?>
                                                                                                                                     <?php
                                                                                                                                 } else {
                                                                                                                                     header('Location: home.php');
@@ -2202,7 +2202,7 @@ function addimagem()
                                                                                                                             };
                                                                                                                             function verificaDownloads()
                                                                                                                             {
-                                                                                                                                if ($_SESSION['nick'] === 'GFOliveira' or $_SESSION['nick'] === 'elrocha') { ?>
+                                                                                                                                if ($_SESSION['nick'] === 'Usuario_ADM_AD') { ?>
                                                                                                                                         <?php header("Content-type: text/html; charset=utf-8", true);
                                                                                                                                         setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil'); ?>
                                                                                                                                         <?php
